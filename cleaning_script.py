@@ -47,7 +47,7 @@ def dateFormat(text):
     else: return text_split[0]
 
 #abriendo y cerrando json para lectura
-a_file = open("fcfm.json", "r", encoding="utf8")
+a_file = open("final_resultado.json", "r", encoding="utf8")
 json_object = json.load(a_file)
 a_file.close()
 
@@ -84,8 +84,8 @@ for pages in json_object:
 
 #abriendo y cerrando json para escritura
 
-a_file = open("fcfm_out.json", "w")
+a_file = open("fcfm_out2.json", "w")
 
-json.dump(json_object, a_file)
+json.dump(json_object, a_file, sort_keys=True, indent=1)
 
 a_file.close()
