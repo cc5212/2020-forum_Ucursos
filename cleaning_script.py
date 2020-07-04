@@ -1,3 +1,4 @@
+# author: {Francisca Suárez}
 import json
 
 format = "\t\t  \t\t\tResponder  \t\t\tPadre \t\t\tIgnorar \t\t\t Compartir \t\t\tCerrar"
