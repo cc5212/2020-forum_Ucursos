@@ -3,7 +3,7 @@
 import json
 
 # abriendo y cerrando json original para lectura
-a_file = open("gral.json", "r", encoding="utf8")
+a_file = open("fcfm_clean.json", "r", encoding="utf8")
 json_object = json.load(a_file)
 a_file.close()
 
@@ -31,7 +31,7 @@ for pages in json_object:
                 padres.pop('child_theme', None)  # deleting the child field from parent
 
 # abriendo y cerrando json para escritura
-a_file = open("gral_flatten.json", "w")
+a_file = open("fcfm_flat.json", "w")
 json.dump(json_object_writing, a_file, indent=1)
 
 a_file.close()
