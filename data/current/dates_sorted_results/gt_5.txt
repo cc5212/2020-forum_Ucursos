@@ -1,0 +1,39 @@
+before_18O_sorted.tsv:
+gracias	8823
+saludos	8623
+alguien	8548
+facultad	4639
+porque	4327
+también	4129
+pueden	3811
+cuando	3665
+cualquier	3641
+estudiantes	3199
+correo	3154
+
+18O_covid_sorted.tsv:
+gracias	332
+saludos	312
+alguien	271
+también	213
+porque	206
+pueden	169
+facultad	168
+cualquier	155
+están	152
+estudiantes	151
+cuando	150
+
+covid_today_sorted.tsv:
+clases	496
+gracias	474
+estudiantes	459
+también	403
+alguien	392
+porque	381
+saludos	378
+facultad	364
+semestre	362
+universidad	332
+online	287
+

@@ -1,0 +1,39 @@
+before_18O_sorted.tsv:
+gracias	8823
+saludos	8623
+alguien	8548
+todos	6228
+tiene	5950
+está	5400
+facultad	4639
+hacer	4441
+tengo	4394
+porque	4327
+puede	4252
+
+18O_covid_sorted.tsv:
+gracias	332
+saludos	312
+está	303
+alguien	271
+tiene	253
+todos	214
+también	213
+porque	206
+desde	201
+sobre	197
+chile	195
+
+covid_today_sorted.tsv:
+clases	496
+gracias	474
+hacer	468
+estudiantes	459
+todos	408
+también	403
+está	400
+alguien	392
+porque	381
+saludos	378
+tiene	375
+

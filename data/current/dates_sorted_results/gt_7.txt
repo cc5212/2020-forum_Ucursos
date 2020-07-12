@@ -1,0 +1,39 @@
+before_18O_sorted.tsv:
+facultad	4639
+también	4129
+cualquier	3641
+estudiantes	3199
+beauchef	2707
+facebook	2689
+universidad	2487
+información	2322
+semestre	2308
+comunidad	2290
+ingeniería	2248
+
+18O_covid_sorted.tsv:
+también	213
+facultad	168
+cualquier	155
+estudiantes	151
+personas	146
+universidad	145
+información	136
+práctica	127
+arriendo	125
+departamento	123
+ingeniería	112
+
+covid_today_sorted.tsv:
+estudiantes	459
+también	403
+facultad	364
+semestre	362
+universidad	332
+personas	231
+situación	221
+comunidad	214
+problemas	195
+problema	187
+respecto	172
+
