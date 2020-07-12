@@ -8,13 +8,16 @@ Analysis of the most frequent co-stars in IMDb with Hadoop. [Alice Aardvark, Bob
 
 # Overview
 The main goal of this project is to analyze if there is a noticeable change in the common words used by participants of the fcfm and Uchile forums in the ucursos platform during the 2 events that marked recent chilean and world's history, the 18O political movement and the COVID-19 pandemic.
+
 State what is the main goal of the project. State what sorts of question(s) you want to answer or what sort of system you want to build. (Questions may be non-technical -- e.g., is there a global correlation between coffee consumption and research output -- so long as they require data analysis or other technical solutions.)
 
 # Data
-The data used comes from a scrapping of both of the forums using python, the data is in JSON format and contains the title, date of posting, theme, and content if it's a parent post, and title of parent post, date of posting and content if it's an answer to a post. There is a total of 40MB of lines
+The data used comes from a scrapping of both of the forums using python, the data is in JSON format and contains the title, date of posting, theme, and content if it's a parent post, and title of parent post, date of posting and content if it's an answer to a post. There is a total of 40MB of lines, and arround 140k unique posts and answers.
+
 Describe the raw dataset that you considered for your project. Where did it come from? Why was it chosen? What information does it contain? What format was it in? What size was it? How many lines/records? Provide links.
 
 # Methods
+The analisis of the data was made using pig, because of the easy to use and continous overview of the data in the console.
 
 Detail the methods used during the project. Provide an overview of the techniques/technologies used, why you used them and how you used them. Refer to the source-code delivered with the project. Describe any problems you encountered.
 
