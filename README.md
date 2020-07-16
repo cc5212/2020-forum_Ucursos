@@ -1,23 +1,38 @@
 # 2020-forum-ucursos
-Analysis of the common words and the feelings associated to them, used in fcfm and Universidad de Chile forums during 3 periods of time
-- Before 18O
-- Between 18O and start of quarantine in Santiago
-- After the start of quarantine to today
+Análisis de las palabras más comunes y los sentimientos asociados a ellos dentro del foro de la FCFM de la Universidad de Chile, durante 3 periodos de tiempo:
 
-Analysis of the most frequent co-stars in IMDb with Hadoop. [Alice Aardvark, Bob Bobcat, Carol Chimera. Group 42]
+- Antes del 18 de Octubre (estallido social de Chile)
+- Entre el 18 de Octubre y el comienzo de la cuarentena debido al Covid-19 en Santiago de Chile
+- Desde el comienzo de la cuarentena en Santiago de Chile hasta hoy
 
-# Overview
-The main goal of this project is to analyze if there is a noticeable change in the common words and in the feelings represented by those words used by participants of the fcfm and Uchile forums in the ucursos platform during the 2 events that marked recent chilean and world's history, the 18O political movement and the COVID-19 pandemic.
+# Resumen
+El principal objetivo de este proyecto es analizar si hay un cambio notable en las palabras comunes y en los sentimientos representados por las palabras usadas por los participantes del foro de la FCFM en la plataforma [ucursos](http://ucursos.cl/) durante los 2 eventos que han marcado significativamente la historia de Chile y el mundo, el **estallido social** del 18 de Octubre del 2019 y la pandemia mundial del COVID-19.
 
-State what is the main goal of the project. State what sorts of question(s) you want to answer or what sort of system you want to build. (Questions may be non-technical -- e.g., is there a global correlation between coffee consumption and research output -- so long as they require data analysis or other technical solutions.)
+Las preguntas que se esperan resolver son las siguientes:
+
+1.  ¿Cuales son las palabras más populares presentes en los comentarios del foro?
+2.  ¿Cómo afectó el estallido social y el inicio de la cuarentena en las palabras usadas dentro del foro?
+3.  ¿Existe una correlación entre las palabras más comunes y las fechas importantes de revuelo nacional e internacional?
+4.  ¿Existe una mayor participación dentro del foro en fechas relevantes?
 
 # Data
-The data used comes from a scrapping of both of the forums using python, the data is in JSON format and contains the title, date of posting, theme, and content if it's a parent post, and title of parent post, date of posting and content if it's an answer to a post. There is a total of 40MB of lines, and arround 140k unique posts and answers.
+El dataset principal fue obtenido por medio de un web scraping realizado dentro del foro de ucursos usando la gema `Watir` en Ruby. Los datos fueron tratados realizando una limpieza en Python y se almacenaron en un archivo TSV para el trabajo con Hadoop. Cada fila del dataset usado contiene los siguientes datos:
+
+* `Title`: Titulo del post. Si es un comentario entonces contiene el titulo del post.
+* `Date of posting`: Fecha de publicación de cada post y comentario.
+* `Theme of post`: Tema del post. Si es un comentario del post principal este dato está en nulo.
+* `Content`: Contenido del post o comentario
+
+El tamaño del dataset es de **40MB** y posee alrededor de **140k** filas únicas 
+
+El segundo dataset con el que se trabajó fue **[NRC Sentiment Lexicons](http://saifmohammad.com/)** el que contiene un conjunto de palabras traducidas al español donde clasifica los sentimientos de cada una: (anger, anticipation, disgust, fear, joy, sadness, surprise, trust)
+
+Se escogió este dataset debido a que se quería estudiar los sentimientos de los estudiantes de la FCFM en los comentarios que se postearon en el foro en fechas importantes.
 
 Describe the raw dataset that you considered for your project. Where did it come from? Why was it chosen? What information does it contain? What format was it in? What size was it? How many lines/records? Provide links.
 
 # Methods
-The analisis of the data was made using map/reduce for word counting in the periods mentioned above, and then that data was used as an input for a pig script that let us associate words with feelings.
+The analysis of the data was made using map/reduce for word counting in the periods mentioned above, and then that data was used as an input for a pig script that let us associate words with feelings.
 
 Detail the methods used during the project. Provide an overview of the techniques/technologies used, why you used them and how you used them. Refer to the source-code delivered with the project. Describe any problems you encountered.
 
@@ -69,12 +84,50 @@ And finally we can calculate the difference by period
 | surprise     |        -0.040002643       |        0.320495899       |
 | trust        |        0.126479193        |        0.920161065       |
 
-
 Detail the results of the project. Different projects will have different types of results; e.g., run-times or result sizes, evaluation of the methods you're comparing, the interface of the system you've built, and/or some of the results of the data analysis you conducted.
 
+
+
+## Dates with most post published
+
+| 21-10-2019 | 261  |
+| ---------- | ---- |
+| 29-10-2019 | 227  |
+| 13-05-2020 | 225  |
+| 01-05-2020 | 218  |
+| 26-05-2020 | 215  |
+| 29-04-2020 | 212  |
+| 29-03-2020 | 188  |
+| 16-03-2020 | 176  |
+| 23-03-2020 | 176  |
+| 12-05-2020 | 166  |
+
+
+
+
+
+
+
+## Dates with most comments
+
+| 01-05-2020 | 13060 |
+| ---------- | ----- |
+| 29-10-2019 | 11861 |
+| 13-05-2020 | 11807 |
+| 23-03-2020 | 9199  |
+| 29-03-2020 | 7349  |
+| 22-03-2020 | 7266  |
+| 29-04-2020 | 6308  |
+| 11-04-2020 | 6287  |
+| 27-04-2020 | 5848  |
+| 06-06-2020 | 5608  |
+
+
+
 # Conclusion
-After the analisis was done, we can conclude that the fcfm forum did not have a noticeable change during the 18O and COVID events, instead, the behaviour and words used stayed constant
-Summarise main lessons learnt. What was easy? What was difficult? What could have been done better or more efficiently?
+
+After the analysis was done, we can conclude that the FCFM forum did not have a noticeable change during the 18O and COVID events, instead, the behavior and words used stayed constant
+Summaries main lessons learnt. What was easy? What was difficult? What could have been done better or more efficiently?
 
 # Appendix
 
