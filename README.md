@@ -23,9 +23,11 @@ El dataset principal fue obtenido por medio de un web scraping realizado dentro 
 * `Theme of post`: Tema del post. Si es un comentario del post principal este dato está en nulo.
 * `Content`: Contenido del post o comentario
 
-El tamaño del dataset es de **40MB** y posee alrededor de **140k** filas únicas 
+El tamaño del dataset es de **40 MB** y posee alrededor de **140k** tuplas 
 
 El segundo dataset con el que se trabajó fue **[NRC Sentiment Lexicons](http://saifmohammad.com/)** el que contiene un conjunto de palabras traducidas al español donde clasifica los sentimientos de cada una: (anger, anticipation, disgust, fear, joy, sadness, surprise, trust)
+
+El tamaño del dataset es de **190 KB** su formato es **TSV** y posee **6356** tuplas
 
 Se escogió este dataset debido a que se quería estudiar los sentimientos de los estudiantes de la FCFM en los comentarios que se postearon en el foro en fechas importantes.
 
