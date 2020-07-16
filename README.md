@@ -106,7 +106,7 @@ Detail the results of the project. Different projects will have different types 
 
 
 
-
+![](https://github.com/cc5212/2020-forum_Ucursos/blob/master/images/post_fecha.png)
 
 
 
@@ -125,6 +125,8 @@ Detail the results of the project. Different projects will have different types 
 | 06-06-2020 | 5608  |
 
 
+
+![](https://github.com/cc5212/2020-forum_Ucursos/blob/master/images/com_fecha.png)
 
 # Conclusion
 
