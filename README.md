@@ -31,12 +31,13 @@ El tamaño del dataset es de **190 KB** su formato es **TSV** y posee **6356** t
 
 Se escogió este dataset debido a que se quería estudiar los sentimientos de los estudiantes de la FCFM en los comentarios que se postearon en el foro en fechas importantes.
 
-Describe the raw dataset that you considered for your project. Where did it come from? Why was it chosen? What information does it contain? What format was it in? What size was it? How many lines/records? Provide links.
+# Métodos
+El análisis de los datos se realizó en Java Hadoop, utilizando MapReduce para el recuento de palabras en los períodos mencionados anteriormente, y luego esos datos se utilizaron como entrada para un script en Pig que nos permitió asociar palabras con sentimientos.
 
-# Methods
-The analysis of the data was made using map/reduce for word counting in the periods mentioned above, and then that data was used as an input for a pig script that let us associate words with feelings.
+La tabla que contenía las palabras y los sentimientos asociados a ellas, era una traducción proveida por su creador, pero habían muchas palabras sin traducción, o su traducción era de dos palabras o más (por lo tanto, en nuestro análisis no servirían). Es por esto que hubo que eliminar varias de sus tuplas. 
 
-Detail the methods used during the project. Provide an overview of the techniques/technologies used, why you used them and how you used them. Refer to the source-code delivered with the project. Describe any problems you encountered.
+Además, las tildes también fueron un problema, puesto que en el foro no siempre se utilizan las palabras tildadas, por lo que hubo que normalizar estos símbolos tanto como para la tabla de emociones, como para la de nuestros datos. Tomamos en cuenta que podría haber malentendidos entre palabras que se tildan de forma distinta y expresan sentimientos opuestos, pero considerando la cantidad de datos perdidos en el join si se mantenían las tildes, preferimos normalizar los datasets.
+
 
 # Results
 After analyzing the data, it became clear that there was not a noticeable change in the number of words associated to a certain feeling in any given period, if anything, we saw the biggest change was the decrease of words associated with negative emotion, but that was only a 2,5% decrease in the number of words.
@@ -124,15 +125,126 @@ Detail the results of the project. Different projects will have different types 
 | 27-04-2020 | 5848  |
 | 06-06-2020 | 5608  |
 
+## Palabras más usadas por periodo
+En esta sección las tildes sí fueron consideradas. 
+### Palabras de largo igual o mayor a 4
++----------+--------+---------+--------+-------------+--------+
+|     Antes 18O     |    18O-COVID19   |       COVID19-HOY    |
++----------+--------+---------+--------+-------------+--------+
+| Palabra  | Conteo | Palabra | Conteo | Palabra     | Conteo |
++----------+--------+---------+--------+-------------+--------+
+| gracias  | 8823   | gracias | 332    | clases      | 496    |
++----------+--------+---------+--------+-------------+--------+
+| saludos  | 8623   | saludos | 312    | gracias     | 474    |
++----------+--------+---------+--------+-------------+--------+
+| alguien  | 8548   | está    | 303    | hacer       | 468    |
++----------+--------+---------+--------+-------------+--------+
+| todos    | 6228   | alguien | 271    | estudiantes | 459    |
++----------+--------+---------+--------+-------------+--------+
+| tiene    | 5950   | tiene   | 253    | todos       | 408    |
++----------+--------+---------+--------+-------------+--------+
+| está     | 5400   | todos   | 214    | también     | 403    |
++----------+--------+---------+--------+-------------+--------+
+| facultad | 4639   | también | 213    | está        | 400    |
++----------+--------+---------+--------+-------------+--------+
+| hacer    | 4441   | porque  | 206    | alguien     | 392    |
++----------+--------+---------+--------+-------------+--------+
+| tengo    | 4394   | desde   | 201    | porque      | 381    |
++----------+--------+---------+--------+-------------+--------+
+| porque   | 4327   | sobre   | 197    | saludos     | 378    |
++----------+--------+---------+--------+-------------+--------+
+| puede    | 4252   | chile   | 195    | tiene       | 375    |
++----------+--------+---------+--------+-------------+--------+
+### Palabras de largo igual o mayor a 5
++-------------+--------+-------------+--------+-------------+--------+
+|       Antes 18O      |      18O-COVID19     |      COVID19-HOY     |
++-------------+--------+-------------+--------+-------------+--------+
+| Palabra     | Conteo | Palabra     | Conteo | Palabra     | Conteo |
++-------------+--------+-------------+--------+-------------+--------+
+| gracias     | 8823   | gracias     | 332    | clases      | 496    |
++-------------+--------+-------------+--------+-------------+--------+
+| saludos     | 8623   | saludos     | 312    | gracias     | 474    |
++-------------+--------+-------------+--------+-------------+--------+
+| alguien     | 8548   | alguien     | 271    | estudiantes | 459    |
++-------------+--------+-------------+--------+-------------+--------+
+| facultad    | 4639   | también     | 213    | también     | 403    |
++-------------+--------+-------------+--------+-------------+--------+
+| porque      | 4327   | porque      | 206    | alguien     | 392    |
++-------------+--------+-------------+--------+-------------+--------+
+| también     | 4129   | pueden      | 169    | porque      | 381    |
++-------------+--------+-------------+--------+-------------+--------+
+| pueden      | 3811   | facultad    | 168    | saludos     | 378    |
++-------------+--------+-------------+--------+-------------+--------+
+| cuando      | 3665   | cualquier   | 155    | facultad    | 364    |
++-------------+--------+-------------+--------+-------------+--------+
+| cualquier   | 3641   | están       | 152    | semestre    | 362    |
++-------------+--------+-------------+--------+-------------+--------+
+| estudiantes | 3199   | estudiantes | 151    | universidad | 332    |
++-------------+--------+-------------+--------+-------------+--------+
+| correo      | 3154   | cuando      | 150    | online      | 287    |
++-------------+--------+-------------+--------+-------------+--------+
+### Palabras de largo igual o mayor a 6
++-------------+--------+-------------+--------+-------------+--------+
+|       Antes 18O      |      18O-COVID19     |      COVID19-HOY     |
++-------------+--------+-------------+--------+-------------+--------+
+| Palabra     | Conteo | Palabra     | Conteo | Palabra     | Conteo |
++-------------+--------+-------------+--------+-------------+--------+
+| gracias     | 8823   | gracias     | 332    | gracias     | 474    |
++-------------+--------+-------------+--------+-------------+--------+
+| saludos     | 8623   | saludos     | 312    | estudiantes | 459    |
++-------------+--------+-------------+--------+-------------+--------+
+| alguien     | 8548   | alguien     | 271    | también     | 403    |
++-------------+--------+-------------+--------+-------------+--------+
+| facultad    | 4639   | también     | 213    | alguien     | 392    |
++-------------+--------+-------------+--------+-------------+--------+
+| también     | 4129   | facultad    | 168    | saludos     | 378    |
++-------------+--------+-------------+--------+-------------+--------+
+| cualquier   | 3641   | cualquier   | 155    | facultad    | 364    |
++-------------+--------+-------------+--------+-------------+--------+
+| estudiantes | 3199   | estudiantes | 151    | semestre    | 362    |
++-------------+--------+-------------+--------+-------------+--------+
+| beauchef    | 2707   | personas    | 146    | universidad | 332    |
++-------------+--------+-------------+--------+-------------+--------+
+| facebook    | 2689   | universidad | 145    | escuela     | 268    |
++-------------+--------+-------------+--------+-------------+--------+
+| universidad | 2487   | información | 136    | personas    | 231    |
++-------------+--------+-------------+--------+-------------+--------+
+| además      | 2477   | práctica    | 127    | situación   | 221    |
++-------------+--------+-------------+--------+-------------+--------+
 
-
+### Palabras de largo igual o mayor a 7
++-------------+--------+--------------+--------+-------------+--------+
+|       Antes 18O      |      18O-COVID19      |      COVID19-HOY     |
++-------------+--------+--------------+--------+-------------+--------+
+| Palabra     | Conteo | Palabra      | Conteo | Palabra     | Conteo |
++-------------+--------+--------------+--------+-------------+--------+
+| facultad    | 4639   | también      | 213    | estudiantes | 459    |
++-------------+--------+--------------+--------+-------------+--------+
+| también     | 4129   | facultad     | 168    | también     | 403    |
++-------------+--------+--------------+--------+-------------+--------+
+| cualquier   | 3641   | cualquier    | 155    | facultad    | 364    |
++-------------+--------+--------------+--------+-------------+--------+
+| estudiantes | 3199   | estudiantes  | 151    | semestre    | 362    |
++-------------+--------+--------------+--------+-------------+--------+
+| beauchef    | 2707   | personas     | 146    | universidad | 332    |
++-------------+--------+--------------+--------+-------------+--------+
+| facebook    | 2689   | universidad  | 145    | personas    | 231    |
++-------------+--------+--------------+--------+-------------+--------+
+| universidad | 2487   | información  | 136    | situación   | 221    |
++-------------+--------+--------------+--------+-------------+--------+
+| información | 2322   | práctica     | 127    | comunidad   | 214    |
++-------------+--------+--------------+--------+-------------+--------+
+| semestre    | 2308   | arriendo     | 125    | problemas   | 195    |
++-------------+--------+--------------+--------+-------------+--------+
+| comunidad   | 2290   | departamento | 123    | problema    | 187    |
++-------------+--------+--------------+--------+-------------+--------+
+| ingeniería  | 2248   | ingeniería   | 112    | respecto    | 172    |
++-------------+--------+--------------+--------+-------------+--------+
 ![](https://github.com/cc5212/2020-forum_Ucursos/blob/master/images/com_fecha.png)
 
-# Conclusion
+# Conclusión
 
-After the analysis was done, we can conclude that the FCFM forum did not have a noticeable change during the 18O and COVID events, instead, the behavior and words used stayed constant
-Summaries main lessons learnt. What was easy? What was difficult? What could have been done better or more efficiently?
+Después de que se realizó el análisis, podemos concluir que el foro FCFM no tuvo un cambio notable durante los eventos 18O y COVID, en cambio, el comportamiento y las palabras utilizadas se mantuvieron constantes. Aunque, modificando el largo de las palabras filtradas, la tónica de la problemática de cada período va apareciendo. Por ejemplo, durante el periodo de 18O-COVID19 encontramos "chile" y en el periodo COVID19-HOY encontramos palabras como "clases", "online", "situación" y "problema/s".
 
-# Appendix
+Respecto al conteo de emociones, podemos atribuir este cambio tan pequeño a que la tabla utilizada para ello era una traducción automatizada del inglés, por lo que se pierde mucha información. Por otro lado, el lenguaje chileno tiene varias características particulares que pueden hacer difícil compararlo con una tabla tan general. Otra perspectiva, es que los estudiantes de la facultad mantienen el positivismo frente a situaciones complejas.
 
-You can use this for key code snippets that you don't want to clutter the main text.
