@@ -96,7 +96,7 @@ Con esta información podemos calcular la variación porcentual por periodo
 | 12-05-2020     | 166               |
 
 
-![](https://github.com/cc5212/2020-forum_Ucursos/blob/master/images/post_fecha.png)
+![](https://github.com/cc5212/2020-forum_Ucursos/blob/master/images/p_fecha.png)
 
 
 ## Fechas con mas comentarios
@@ -114,7 +114,7 @@ Con esta información podemos calcular la variación porcentual por periodo
 | 27-04-2020     | 5848                    |
 | 06-06-2020     | 5608                    |
 
-![](https://github.com/cc5212/2020-forum_Ucursos/blob/master/images/com_fecha.png)
+![](https://github.com/cc5212/2020-forum_Ucursos/blob/master/images/c_fecha.png)
 ## Palabras más usadas por periodo
 En esta sección las tildes sí fueron consideradas. 
 ### Palabras de largo igual o mayor a 4
