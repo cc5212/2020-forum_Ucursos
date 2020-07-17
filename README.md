@@ -188,6 +188,7 @@ En esta sección las tildes sí fueron consideradas.
 | semestre         | 2308   | arriendo          | 125    | problemas         | 195    |
 | comunidad        | 2290   | departamento      | 123    | problema          | 187    |
 | ingeniería       | 2248   | ingeniería        | 112    | respecto          | 172    |
+
 ![](https://github.com/cc5212/2020-forum_Ucursos/blob/master/images/com_fecha.png)
 
 # Conclusión
