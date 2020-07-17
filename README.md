@@ -128,7 +128,7 @@ Detail the results of the project. Different projects will have different types 
 ## Palabras más usadas por periodo
 En esta sección las tildes sí fueron consideradas. 
 ### Palabras de largo igual o mayor a 4
-|      Antes 18O          |     18O-COVID19          |        COVID19-HOY          |
+|      Antes 18O |        |     18O-COVID19 |        |        COVID19-HOY |        |
 |----------------|--------|-----------------|--------|--------------------|--------|
 | Palabra        | Conteo | Palabra         | Conteo | Palabra            | Conteo |
 | gracias        | 8823   | gracias         | 332    | clases             | 496    |
@@ -143,33 +143,20 @@ En esta sección las tildes sí fueron consideradas.
 | porque         | 4327   | sobre           | 197    | saludos            | 378    |
 | puede          | 4252   | chile           | 195    | tiene              | 375    |
 ### Palabras de largo igual o mayor a 5
-+-------------+--------+-------------+--------+-------------+--------+
-|       Antes 18O      |      18O-COVID19     |      COVID19-HOY     |
-+-------------+--------+-------------+--------+-------------+--------+
-| Palabra     | Conteo | Palabra     | Conteo | Palabra     | Conteo |
-+-------------+--------+-------------+--------+-------------+--------+
-| gracias     | 8823   | gracias     | 332    | clases      | 496    |
-+-------------+--------+-------------+--------+-------------+--------+
-| saludos     | 8623   | saludos     | 312    | gracias     | 474    |
-+-------------+--------+-------------+--------+-------------+--------+
-| alguien     | 8548   | alguien     | 271    | estudiantes | 459    |
-+-------------+--------+-------------+--------+-------------+--------+
-| facultad    | 4639   | también     | 213    | también     | 403    |
-+-------------+--------+-------------+--------+-------------+--------+
-| porque      | 4327   | porque      | 206    | alguien     | 392    |
-+-------------+--------+-------------+--------+-------------+--------+
-| también     | 4129   | pueden      | 169    | porque      | 381    |
-+-------------+--------+-------------+--------+-------------+--------+
-| pueden      | 3811   | facultad    | 168    | saludos     | 378    |
-+-------------+--------+-------------+--------+-------------+--------+
-| cuando      | 3665   | cualquier   | 155    | facultad    | 364    |
-+-------------+--------+-------------+--------+-------------+--------+
-| cualquier   | 3641   | están       | 152    | semestre    | 362    |
-+-------------+--------+-------------+--------+-------------+--------+
-| estudiantes | 3199   | estudiantes | 151    | universidad | 332    |
-+-------------+--------+-------------+--------+-------------+--------+
-| correo      | 3154   | cuando      | 150    | online      | 287    |
-+-------------+--------+-------------+--------+-------------+--------+
+|        Antes 18O |        |       18O-COVID19 |        |       COVID19-HOY |        |
+|------------------|--------|-------------------|--------|-------------------|--------|
+| Palabra          | Conteo | Palabra           | Conteo | Palabra           | Conteo |
+| gracias          | 8823   | gracias           | 332    | clases            | 496    |
+| saludos          | 8623   | saludos           | 312    | gracias           | 474    |
+| alguien          | 8548   | alguien           | 271    | estudiantes       | 459    |
+| facultad         | 4639   | también           | 213    | también           | 403    |
+| porque           | 4327   | porque            | 206    | alguien           | 392    |
+| también          | 4129   | pueden            | 169    | porque            | 381    |
+| pueden           | 3811   | facultad          | 168    | saludos           | 378    |
+| cuando           | 3665   | cualquier         | 155    | facultad          | 364    |
+| cualquier        | 3641   | están             | 152    | semestre          | 362    |
+| estudiantes      | 3199   | estudiantes       | 151    | universidad       | 332    |
+| correo           | 3154   | cuando            | 150    | online            | 287    |
 ### Palabras de largo igual o mayor a 6
 +-------------+--------+-------------+--------+-------------+--------+
 |       Antes 18O      |      18O-COVID19     |      COVID19-HOY     |
