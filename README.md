@@ -8,8 +8,6 @@ Integrantes:
 
 Grupo: 10
 
-Análisis de las palabras más comunes y los sentimientos asociados a ellos dentro del foro de la FCFM de la Universidad de Chile, durante 3 periodos de tiempo:
-
 - Antes del 18 de Octubre (estallido social de Chile)
 - Entre el 18 de Octubre y el comienzo de la cuarentena debido al Covid-19 en Santiago de Chile
 - Desde el comienzo de la cuarentena en Santiago de Chile hasta hoy
