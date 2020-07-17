@@ -41,6 +41,8 @@ El tamaño del dataset es de **190 KB** su formato es **TSV** y posee **6356** t
 Se escogió este dataset debido a que se quería estudiar los sentimientos de los estudiantes de la FCFM en los comentarios que se postearon en el foro en fechas importantes.
 
 # Métodos
+El código relevante que fue utilizado para el proyecto está en la [src](https://github.com/cc5212/2020-forum_Ucursos/tree/master/src). El código utilizado para la limpieza de datos está en Python y es posible encontrarlo en [extractors/](extractors/)
+
 El análisis de los datos se realizó en Java Hadoop, utilizando MapReduce para el recuento de palabras en los períodos mencionados anteriormente, y luego esos datos se utilizaron como entrada para un script en Pig que nos permitió asociar palabras con sentimientos.
 
 La tabla que contenía las palabras y los sentimientos asociados a ellas, era una traducción proveida por su creador, pero habían muchas palabras sin traducción, o su traducción era de dos palabras o más (por lo tanto, en nuestro análisis no servirían). Es por esto que hubo que eliminar varias de sus tuplas. 
