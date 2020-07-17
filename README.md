@@ -103,6 +103,7 @@ Con esta información podemos calcular la variación porcentual por periodo
 | 27-04-2020 | 5848  |
 | 06-06-2020 | 5608  |
 
+![](https://github.com/cc5212/2020-forum_Ucursos/blob/master/images/com_fecha.png)
 ## Palabras más usadas por periodo
 En esta sección las tildes sí fueron consideradas. 
 ### Palabras de largo igual o mayor a 4
@@ -168,7 +169,7 @@ En esta sección las tildes sí fueron consideradas.
 | ingeniería       | 2248   | ingeniería        | 112    | respecto          | 172    |
 
 
-![](https://github.com/cc5212/2020-forum_Ucursos/blob/master/images/com_fecha.png)
+
 
 # Conclusión
 
