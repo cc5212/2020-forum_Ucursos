@@ -128,8 +128,7 @@ Detail the results of the project. Different projects will have different types 
 ## Palabras más usadas por periodo
 En esta sección las tildes sí fueron consideradas. 
 ### Palabras de largo igual o mayor a 4
-+----------+--------+---------+--------+-------------+--------+
-|     Antes 18O     |    18O-COVID19   |       COVID19-HOY    |
+
 +----------+--------+---------+--------+-------------+--------+
 | Palabra  | Conteo | Palabra | Conteo | Palabra     | Conteo |
 +----------+--------+---------+--------+-------------+--------+
