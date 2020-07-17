@@ -1,12 +1,12 @@
 # 2020-analysis-forum-ucursos
 
-Integrantes:
+**Integrantes**:
 
-* Martín Araya
-* Francisca Suarez
-* Sebastián Sepúlveda
+* [Martín Araya](https://github.com/kawallala)
+* [Francisca Suarez](https://github.com/franpss)
+* [Sebastián Sepúlveda](https://github.com/sbsepul)
 
-Grupo: 10
+**Grupo**: 10
 
 Análisis de las palabras más comunes y los sentimientos asociados a ellos dentro del foro de la FCFM de la Universidad de Chile, durante 3 periodos de tiempo:
 
