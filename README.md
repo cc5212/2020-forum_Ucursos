@@ -188,3 +188,5 @@ Después de que se realizó el análisis, podemos concluir que el foro FCFM no t
 
 Respecto al conteo de emociones, podemos atribuir este cambio tan pequeño a que la tabla utilizada para ello era una traducción automatizada del inglés, por lo que se pierde mucha información. Por otro lado, el lenguaje chileno tiene varias características particulares que pueden hacer difícil compararlo con una tabla tan general. Otra perspectiva, es que los estudiantes de la facultad mantienen el positivismo frente a situaciones complejas.
 
+Mientras que en el análisis realizado en la participación en las publicaciones del foro se logró observar que fechas importantes como el estallido social **(21-10-2019)** y la suspensión de clases en la universidad **(Mes de marzo)** marcaron una mayor participación dentro del foro. También fechas relevantes como las vacaciones de verano o las ultimas semanas de clases, tiende a disminuir la participación.
+
