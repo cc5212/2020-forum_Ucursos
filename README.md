@@ -158,62 +158,36 @@ En esta sección las tildes sí fueron consideradas.
 | estudiantes      | 3199   | estudiantes       | 151    | universidad       | 332    |
 | correo           | 3154   | cuando            | 150    | online            | 287    |
 ### Palabras de largo igual o mayor a 6
-+-------------+--------+-------------+--------+-------------+--------+
-|       Antes 18O      |      18O-COVID19     |      COVID19-HOY     |
-+-------------+--------+-------------+--------+-------------+--------+
-| Palabra     | Conteo | Palabra     | Conteo | Palabra     | Conteo |
-+-------------+--------+-------------+--------+-------------+--------+
-| gracias     | 8823   | gracias     | 332    | gracias     | 474    |
-+-------------+--------+-------------+--------+-------------+--------+
-| saludos     | 8623   | saludos     | 312    | estudiantes | 459    |
-+-------------+--------+-------------+--------+-------------+--------+
-| alguien     | 8548   | alguien     | 271    | también     | 403    |
-+-------------+--------+-------------+--------+-------------+--------+
-| facultad    | 4639   | también     | 213    | alguien     | 392    |
-+-------------+--------+-------------+--------+-------------+--------+
-| también     | 4129   | facultad    | 168    | saludos     | 378    |
-+-------------+--------+-------------+--------+-------------+--------+
-| cualquier   | 3641   | cualquier   | 155    | facultad    | 364    |
-+-------------+--------+-------------+--------+-------------+--------+
-| estudiantes | 3199   | estudiantes | 151    | semestre    | 362    |
-+-------------+--------+-------------+--------+-------------+--------+
-| beauchef    | 2707   | personas    | 146    | universidad | 332    |
-+-------------+--------+-------------+--------+-------------+--------+
-| facebook    | 2689   | universidad | 145    | escuela     | 268    |
-+-------------+--------+-------------+--------+-------------+--------+
-| universidad | 2487   | información | 136    | personas    | 231    |
-+-------------+--------+-------------+--------+-------------+--------+
-| además      | 2477   | práctica    | 127    | situación   | 221    |
-+-------------+--------+-------------+--------+-------------+--------+
+|        Antes 18O |        |       18O-COVID19 |        |       COVID19-HOY |        |
+|------------------|--------|-------------------|--------|-------------------|--------|
+| Palabra          | Conteo | Palabra           | Conteo | Palabra           | Conteo |
+| gracias          | 8823   | gracias           | 332    | gracias           | 474    |
+| saludos          | 8623   | saludos           | 312    | estudiantes       | 459    |
+| alguien          | 8548   | alguien           | 271    | también           | 403    |
+| facultad         | 4639   | también           | 213    | alguien           | 392    |
+| también          | 4129   | facultad          | 168    | saludos           | 378    |
+| cualquier        | 3641   | cualquier         | 155    | facultad          | 364    |
+| estudiantes      | 3199   | estudiantes       | 151    | semestre          | 362    |
+| beauchef         | 2707   | personas          | 146    | universidad       | 332    |
+| facebook         | 2689   | universidad       | 145    | escuela           | 268    |
+| universidad      | 2487   | información       | 136    | personas          | 231    |
+| además           | 2477   | práctica          | 127    | situación         | 221    |
 
 ### Palabras de largo igual o mayor a 7
-+-------------+--------+--------------+--------+-------------+--------+
-|       Antes 18O      |      18O-COVID19      |      COVID19-HOY     |
-+-------------+--------+--------------+--------+-------------+--------+
-| Palabra     | Conteo | Palabra      | Conteo | Palabra     | Conteo |
-+-------------+--------+--------------+--------+-------------+--------+
-| facultad    | 4639   | también      | 213    | estudiantes | 459    |
-+-------------+--------+--------------+--------+-------------+--------+
-| también     | 4129   | facultad     | 168    | también     | 403    |
-+-------------+--------+--------------+--------+-------------+--------+
-| cualquier   | 3641   | cualquier    | 155    | facultad    | 364    |
-+-------------+--------+--------------+--------+-------------+--------+
-| estudiantes | 3199   | estudiantes  | 151    | semestre    | 362    |
-+-------------+--------+--------------+--------+-------------+--------+
-| beauchef    | 2707   | personas     | 146    | universidad | 332    |
-+-------------+--------+--------------+--------+-------------+--------+
-| facebook    | 2689   | universidad  | 145    | personas    | 231    |
-+-------------+--------+--------------+--------+-------------+--------+
-| universidad | 2487   | información  | 136    | situación   | 221    |
-+-------------+--------+--------------+--------+-------------+--------+
-| información | 2322   | práctica     | 127    | comunidad   | 214    |
-+-------------+--------+--------------+--------+-------------+--------+
-| semestre    | 2308   | arriendo     | 125    | problemas   | 195    |
-+-------------+--------+--------------+--------+-------------+--------+
-| comunidad   | 2290   | departamento | 123    | problema    | 187    |
-+-------------+--------+--------------+--------+-------------+--------+
-| ingeniería  | 2248   | ingeniería   | 112    | respecto    | 172    |
-+-------------+--------+--------------+--------+-------------+--------+
+|        Antes 18O |        |       18O-COVID19 |        |       COVID19-HOY |        |
+|------------------|--------|-------------------|--------|-------------------|--------|
+| Palabra          | Conteo | Palabra           | Conteo | Palabra           | Conteo |
+| facultad         | 4639   | también           | 213    | estudiantes       | 459    |
+| también          | 4129   | facultad          | 168    | también           | 403    |
+| cualquier        | 3641   | cualquier         | 155    | facultad          | 364    |
+| estudiantes      | 3199   | estudiantes       | 151    | semestre          | 362    |
+| beauchef         | 2707   | personas          | 146    | universidad       | 332    |
+| facebook         | 2689   | universidad       | 145    | personas          | 231    |
+| universidad      | 2487   | información       | 136    | situación         | 221    |
+| información      | 2322   | práctica          | 127    | comunidad         | 214    |
+| semestre         | 2308   | arriendo          | 125    | problemas         | 195    |
+| comunidad        | 2290   | departamento      | 123    | problema          | 187    |
+| ingeniería       | 2248   | ingeniería        | 112    | respecto          | 172    |
 ![](https://github.com/cc5212/2020-forum_Ucursos/blob/master/images/com_fecha.png)
 
 # Conclusión
