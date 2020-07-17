@@ -39,25 +39,9 @@ La tabla que contenía las palabras y los sentimientos asociados a ellas, era un
 Además, las tildes también fueron un problema, puesto que en el foro no siempre se utilizan las palabras tildadas, por lo que hubo que normalizar estos símbolos tanto como para la tabla de emociones, como para la de nuestros datos. Tomamos en cuenta que podría haber malentendidos entre palabras que se tildan de forma distinta y expresan sentimientos opuestos, pero considerando la cantidad de datos perdidos en el join si se mantenían las tildes, preferimos normalizar los datasets.
 
 
-# Results
-After analyzing the data, it became clear that there was not a noticeable change in the number of words associated to a certain feeling in any given period, if anything, we saw the biggest change was the decrease of words associated with negative emotion, but that was only a 2,5% decrease in the number of words.
-## Total number of words associated with a feeling by period
-
-|              | Before 18O | 18O-COVID | COVID-TODAY |
-|--------------|:----------:|:---------:|:-----------:|
-| positive     |   168705   |    7844   |    11570    |
-| negative     |    68282   |    3235   |     5921    |
-| anger        |    20835   |    1002   |     1485    |
-| anticipation |    48270   |    2365   |     3370    |
-| disgust      |    15831   |    765    |     1286    |
-| fear         |    28734   |    1578   |     2484    |
-| joy          |    31910   |    1549   |     1976    |
-| sadness      |    38581   |    1856   |     3198    |
-| surprise     |    15574   |    756    |     1031    |
-| trust        |    86761   |    4124   |     5941    |
-| TOTAL        |   523483   |   25074   |    38262    |
-
-This table was then translated to percentages to see the percentage difference by period
+# Resultados
+Después de analizar la data, fue claro que no hay una correlación clara en el cambio de los sentimientos vertidos en el foro en los periodos analizados, de hecho, el mayor cambio detectado fue una disminución de las palabras con connotación negativa, aunque, fue solamente una disminución de 2,5%.
+## Porcentaje de palabras asociadas con emoción por periodo
 
 |              | Before 18O | 18O-COVID | COVID-TODAY |
 |--------------|:----------:|:---------:|:-----------:|
@@ -72,7 +56,7 @@ This table was then translated to percentages to see the percentage difference b
 | surprise     | 2.975073   | 3.015075  | 2.694579    |
 | trust        | 16.5738    | 16.44732  | 15.52715    |
 
-And finally we can calculate the difference by period
+Con esta información podemos calcular la variación porcentual por periodo
 
 |              | Before 180 ->   18O-COVID | 18O-COVID -> COVID-TODAY |
 |--------------|:-------------------------:|:------------------------:|
@@ -87,11 +71,7 @@ And finally we can calculate the difference by period
 | surprise     |        -0.040002643       |        0.320495899       |
 | trust        |        0.126479193        |        0.920161065       |
 
-Detail the results of the project. Different projects will have different types of results; e.g., run-times or result sizes, evaluation of the methods you're comparing, the interface of the system you've built, and/or some of the results of the data analysis you conducted.
-
-
-
-## Dates with most post published
+## Fechas con mas posts publicados
 
 | 21-10-2019 | 261  |
 | ---------- | ---- |
@@ -106,12 +86,10 @@ Detail the results of the project. Different projects will have different types 
 | 12-05-2020 | 166  |
 
 
-
 ![](https://github.com/cc5212/2020-forum_Ucursos/blob/master/images/post_fecha.png)
 
 
-
-## Dates with most comments
+## Fechas con mas comentarios
 
 | 01-05-2020 | 13060 |
 | ---------- | ----- |
@@ -188,6 +166,7 @@ En esta sección las tildes sí fueron consideradas.
 | semestre         | 2308   | arriendo          | 125    | problemas         | 195    |
 | comunidad        | 2290   | departamento      | 123    | problema          | 187    |
 | ingeniería       | 2248   | ingeniería        | 112    | respecto          | 172    |
+
 
 ![](https://github.com/cc5212/2020-forum_Ucursos/blob/master/images/com_fecha.png)
 
