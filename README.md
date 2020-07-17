@@ -128,32 +128,20 @@ Detail the results of the project. Different projects will have different types 
 ## Palabras más usadas por periodo
 En esta sección las tildes sí fueron consideradas. 
 ### Palabras de largo igual o mayor a 4
-
-+----------+--------+---------+--------+-------------+--------+
-| Palabra  | Conteo | Palabra | Conteo | Palabra     | Conteo |
-+----------+--------+---------+--------+-------------+--------+
-| gracias  | 8823   | gracias | 332    | clases      | 496    |
-+----------+--------+---------+--------+-------------+--------+
-| saludos  | 8623   | saludos | 312    | gracias     | 474    |
-+----------+--------+---------+--------+-------------+--------+
-| alguien  | 8548   | está    | 303    | hacer       | 468    |
-+----------+--------+---------+--------+-------------+--------+
-| todos    | 6228   | alguien | 271    | estudiantes | 459    |
-+----------+--------+---------+--------+-------------+--------+
-| tiene    | 5950   | tiene   | 253    | todos       | 408    |
-+----------+--------+---------+--------+-------------+--------+
-| está     | 5400   | todos   | 214    | también     | 403    |
-+----------+--------+---------+--------+-------------+--------+
-| facultad | 4639   | también | 213    | está        | 400    |
-+----------+--------+---------+--------+-------------+--------+
-| hacer    | 4441   | porque  | 206    | alguien     | 392    |
-+----------+--------+---------+--------+-------------+--------+
-| tengo    | 4394   | desde   | 201    | porque      | 381    |
-+----------+--------+---------+--------+-------------+--------+
-| porque   | 4327   | sobre   | 197    | saludos     | 378    |
-+----------+--------+---------+--------+-------------+--------+
-| puede    | 4252   | chile   | 195    | tiene       | 375    |
-+----------+--------+---------+--------+-------------+--------+
+|      Antes 18O          |     18O-COVID19          |        COVID19-HOY          |
+|----------------|--------|-----------------|--------|--------------------|--------|
+| Palabra        | Conteo | Palabra         | Conteo | Palabra            | Conteo |
+| gracias        | 8823   | gracias         | 332    | clases             | 496    |
+| saludos        | 8623   | saludos         | 312    | gracias            | 474    |
+| alguien        | 8548   | está            | 303    | hacer              | 468    |
+| todos          | 6228   | alguien         | 271    | estudiantes        | 459    |
+| tiene          | 5950   | tiene           | 253    | todos              | 408    |
+| está           | 5400   | todos           | 214    | también            | 403    |
+| facultad       | 4639   | también         | 213    | está               | 400    |
+| hacer          | 4441   | porque          | 206    | alguien            | 392    |
+| tengo          | 4394   | desde           | 201    | porque             | 381    |
+| porque         | 4327   | sobre           | 197    | saludos            | 378    |
+| puede          | 4252   | chile           | 195    | tiene              | 375    |
 ### Palabras de largo igual o mayor a 5
 +-------------+--------+-------------+--------+-------------+--------+
 |       Antes 18O      |      18O-COVID19     |      COVID19-HOY     |
