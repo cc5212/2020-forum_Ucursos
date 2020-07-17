@@ -1,4 +1,5 @@
 # 2020-forum-ucursos
+Grupo 10, Integrantes [Martin Araya, Sebastian Sepúlveda, Francisca Suárez]
 Análisis de las palabras más comunes y los sentimientos asociados a ellos dentro del foro de la FCFM de la Universidad de Chile, durante 3 periodos de tiempo:
 
 - Antes del 18 de Octubre (estallido social de Chile)
