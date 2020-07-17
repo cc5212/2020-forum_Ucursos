@@ -1,4 +1,13 @@
-# 2020-forum-ucursos
+# 2020-analysis-forum-ucursos
+
+Integrantes:
+
+* Martín Araya
+* Francisca Suarez
+* Sebastián Sepúlveda
+
+Grupo: 10
+
 Análisis de las palabras más comunes y los sentimientos asociados a ellos dentro del foro de la FCFM de la Universidad de Chile, durante 3 periodos de tiempo:
 
 - Antes del 18 de Octubre (estallido social de Chile)
@@ -73,17 +82,18 @@ Con esta información podemos calcular la variación porcentual por periodo
 
 ## Fechas con mas posts publicados
 
-| 21-10-2019 | 261  |
-| ---------- | ---- |
-| 29-10-2019 | 227  |
-| 13-05-2020 | 225  |
-| 01-05-2020 | 218  |
-| 26-05-2020 | 215  |
-| 29-04-2020 | 212  |
-| 29-03-2020 | 188  |
-| 16-03-2020 | 176  |
-| 23-03-2020 | 176  |
-| 12-05-2020 | 166  |
+| Fecha          | Cantidad de posts |
+| -------------- | ----------------- |
+| **21-10-2019** | **261**           |
+| 29-10-2019     | 227               |
+| 13-05-2020     | 225               |
+| 01-05-2020     | 218               |
+| 26-05-2020     | 215               |
+| 29-04-2020     | 212               |
+| 29-03-2020     | 188               |
+| 16-03-2020     | 176               |
+| 23-03-2020     | 176               |
+| 12-05-2020     | 166               |
 
 
 ![](https://github.com/cc5212/2020-forum_Ucursos/blob/master/images/post_fecha.png)
@@ -91,17 +101,18 @@ Con esta información podemos calcular la variación porcentual por periodo
 
 ## Fechas con mas comentarios
 
-| 01-05-2020 | 13060 |
-| ---------- | ----- |
-| 29-10-2019 | 11861 |
-| 13-05-2020 | 11807 |
-| 23-03-2020 | 9199  |
-| 29-03-2020 | 7349  |
-| 22-03-2020 | 7266  |
-| 29-04-2020 | 6308  |
-| 11-04-2020 | 6287  |
-| 27-04-2020 | 5848  |
-| 06-06-2020 | 5608  |
+| Fecha          | Cantidad de comentarios |
+| -------------- | ----------------------- |
+| 01-05-2020     | 13060                   |
+| **29-10-2019** | **11861**               |
+| 13-05-2020     | 11807                   |
+| **23-03-2020** | **9199**                |
+| **29-03-2020** | **7349**                |
+| **22-03-2020** | **7266**                |
+| 29-04-2020     | 6308                    |
+| 11-04-2020     | 6287                    |
+| 27-04-2020     | 5848                    |
+| 06-06-2020     | 5608                    |
 
 ![](https://github.com/cc5212/2020-forum_Ucursos/blob/master/images/com_fecha.png)
 ## Palabras más usadas por periodo
